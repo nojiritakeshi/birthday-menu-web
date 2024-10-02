@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const isProd = process.env.NODE_ENV === 'production';
+const nextConfig = {
+  output: isProd ? 'export' : '',
+  basePath: isProd ? '/public' : ''
+};
 
 export default nextConfig;
