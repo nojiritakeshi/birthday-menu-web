@@ -1,5 +1,8 @@
 import Image from 'next/image';
+import { IM_Fell_French_Canon_SC } from 'next/font/google';
 import config from '../next.config.mjs';
+
+const inter = IM_Fell_French_Canon_SC({ weight: '400', subsets: ['latin'] });
 
 const BASE_PATH = config.basePath ? config.basePath : '';
 export default function Home() {
@@ -64,7 +67,9 @@ export default function Home() {
               <h2 className="text-center text-lg font-serif font-semibold">
                 Drinks
               </h2>
-              <p className="text-center text-sm mt-2">コーヒー　紅茶　緑茶</p>
+              <p className={`text-center text-sm mt-2 ${inter.className}`}>
+                Nojiri origin コーヒー
+              </p>
             </div>
           </div>
         </div>
