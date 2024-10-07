@@ -25,7 +25,7 @@ export default function RootLayout({
             style={{ margin: '0 auto' }}
           >
             <div className=" border-main transform rotate-3 bg-main bg-height">
-              <div className="p-10 border border-main transform -rotate-3 relative bg-main bg-height">
+              <div className="p-6 border border-main transform -rotate-3 relative bg-main bg-height">
                 {children}
               </div>
             </div>

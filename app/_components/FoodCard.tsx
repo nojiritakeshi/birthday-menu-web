@@ -14,7 +14,7 @@ export const FoodCard: React.FC<FoodJSON[string]> = ({
   description
 }) => {
   return (
-    <div className="p-4 rounded-lg max-w-xs mx-auto">
+    <div className="p-4 rounded-sm max-w-lg mx-auto">
       <h2 className="text-sm">{name}</h2>
       <p className="text-sm mt-2">{price}</p>
 
@@ -25,7 +25,7 @@ export const FoodCard: React.FC<FoodJSON[string]> = ({
           alt="courseの画像"
           layout="fill"
           objectFit="cover"
-          className="rounded-lg"
+          className="rounded-sm"
         />
       </div>
 
