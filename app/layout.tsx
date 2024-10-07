@@ -21,11 +21,11 @@ export default function RootLayout({
       <body className={`${noto.className}`}>
         <main className="h-screen w-hull p-6">
           <div
-            className="justify-center items-center h-5/6 w-72"
+            className="justify-center items-center w-72"
             style={{ margin: '0 auto' }}
           >
-            <div className=" border-main transform rotate-3 bg-main">
-              <div className="p-10 border border-main transform -rotate-3 relative bg-main">
+            <div className=" border-main transform rotate-3 bg-main bg-height">
+              <div className="p-10 border border-main transform -rotate-3 relative bg-main bg-height">
                 {children}
               </div>
             </div>

@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-height {
+  min-height: 660px;
+}
