@@ -7,7 +7,8 @@ export type FoodJSON = {
   [key: string]: {
     path: string;
     name: string;
-    price: number;
+    subName: string;
+    genre: string;
     description: string;
   };
 };

@@ -2,7 +2,8 @@
   "carpaccio": {
     "path": "carpaccio",
     "name": "サーモンのカルパッチョ",
-    "price": 1200,
+    "subName": "～たっぷりの玉ねぎサラダを添えた～",
+    "genre": "Appetizer",
     "description": "新鮮なサーモンを使ったカルパッチョです。"
   }
 }

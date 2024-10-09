@@ -14,7 +14,7 @@ export default function Home() {
           Appetizer
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/carpaccio">旬の魚の特製カルパッチョ</NextLink>
+          <NextLink href="/carpaccio">サーモンのカルパッチョ</NextLink>
         </p>
       </div>
 
