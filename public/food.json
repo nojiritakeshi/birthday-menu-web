@@ -5,5 +5,41 @@
     "subName": "～たっぷりの玉ねぎサラダを添えた～",
     "genre": "Appetizer",
     "description": "新鮮なサーモンを使ったカルパッチョです。"
+  },
+  "harumaki": {
+    "path": "harumaki",
+    "name": "海老と彩り野菜のフレッシュロール",
+    "subName": "～フレッシュな海老と彩り野菜を包んだ～",
+    "genre": "Appetizer",
+    "description": "新鮮な海老と彩り野菜を包んだフレッシュロールです。"
+  },
+  "soup": {
+    "path": "soup",
+    "name": "玉ねぎとベーコンのコンソメスープ",
+    "subName": "～玉ねぎとベーコンをじっくり煮込んだ～",
+    "genre": "Soup",
+    "description": "玉ねぎとベーコンを煮込んだコンソメスープです。"
+  },
+
+  "mainDish": {
+    "path": "mainDish",
+    "name": "ポークソテークリームソース添え",
+    "subName": "～ポークソテーとクリームソースを添えた～",
+    "genre": "MainDish",
+    "description": "ポークソテーとクリームソースを添えたメインディッシュです。"
+  },
+  "desserts": {
+    "path": "desserts",
+    "name": "特製ティラミス",
+    "subName": "～チョコレートとカステラのティラミス～",
+    "genre": "Desserts",
+    "description": "チョコレートとカステラをバランスよく使用したティラミスです。"
+  },
+  "drinks": {
+    "path": "drinks",
+    "name": "Nojiri origin コーヒー",
+    "subName": "～マスターが厳選したコーヒー豆を使用～",
+    "genre": "Drinks",
+    "description": "マスターが厳選したコーヒー豆を使用したコーヒーです。"
   }
 }

@@ -16,13 +16,16 @@ export default function Home() {
         <p className="text-center text-sm mt-2">
           <NextLink href="/carpaccio">サーモンのカルパッチョ</NextLink>
         </p>
+        <p className="text-center text-sm mt-2">
+          <NextLink href="/harumaki">海老と彩り野菜のフレッシュロール</NextLink>
+        </p>
       </div>
 
       {/* Soup */}
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">Soup</h2>
         <p className="text-center text-sm mt-2">
-          人参の冷製クリームスープ トリュフ風味
+          <NextLink href="/soup">玉ねぎとベーコンのコンソメスープ</NextLink>
         </p>
       </div>
 
@@ -32,10 +35,7 @@ export default function Home() {
           MainDish
         </h2>
         <p className="text-center text-sm mt-2">
-          オマール海老と真鯛のロースト 白ワインソース
-        </p>
-        <p className="text-center text-sm">
-          牛フィレ肉とフォアグラのポアレ ロッシーニ風
+          <NextLink href="/mainDish">ポークソテークリームソース添え</NextLink>
         </p>
       </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
           Desserts
         </h2>
         <p className="text-center text-sm mt-2">
-          ホワイトチョコムース フランボワーズソース添え
+          <NextLink href="/desserts">特製ティラミス</NextLink>
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export default function Home() {
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">Drinks</h2>
         <p className={`text-center text-sm mt-2 ${inter.className}`}>
-          Nojiri origin コーヒー
+          <NextLink href="/drinks">Nojiri origin コーヒー</NextLink>
         </p>
       </div>
     </>
