@@ -4,7 +4,7 @@ import { IM_Fell_French_Canon_SC } from 'next/font/google';
 const inter = IM_Fell_French_Canon_SC({ weight: '400', subsets: ['latin'] });
 export default function Home() {
   return (
-    <>
+    <div className={inter.className}>
       {/* タイトル */}
       <h1 className="text-center text-3xl font-serif font-bold mb-8">Menu</h1>
 
@@ -16,7 +16,7 @@ export default function Home() {
         <p className="text-center text-sm mt-2">
           <NextLink href="/carpaccio">サーモンのカルパッチョ</NextLink>
         </p>
-        <p className="text-center text-sm mt-2">
+        <p className="text-center text-sm mt-5">
           <NextLink href="/harumaki">海老と彩り野菜のフレッシュロール</NextLink>
         </p>
       </div>
@@ -52,10 +52,10 @@ export default function Home() {
       {/* Drinks */}
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">Drinks</h2>
-        <p className={`text-center text-sm mt-2 ${inter.className}`}>
+        <p className="text-center text-sm mt-2">
           <NextLink href="/drinks">Nojiri origin コーヒー</NextLink>
         </p>
       </div>
-    </>
+    </div>
   );
 }
