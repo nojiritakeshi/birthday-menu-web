@@ -20,7 +20,13 @@
     "genre": "Soup",
     "description": "玉ねぎとベーコンを煮込んだコンソメスープです。"
   },
-
+  "poisson": {
+    "path": "poisson",
+    "name": "日替わり 彩り寿司セレクション",
+    "subName": "～新鮮ネタで店主自ら握る～",
+    "genre": "Sushi",
+    "description": "店主が直接仕入れた食材を使用。その日おすすめの新鮮なネタで握った彩り寿司セットです。"
+  },
   "mainDish": {
     "path": "mainDish",
     "name": "ポークソテークリームソース添え",

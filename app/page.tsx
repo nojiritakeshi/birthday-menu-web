@@ -29,6 +29,16 @@ export default function Home() {
         </p>
       </div>
 
+      {/* Sushi */}
+      <div className="mb-6">
+        <h2 className="text-center text-lg font-serif font-semibold">
+          poisson
+        </h2>
+        <p className="text-center text-sm mt-2">
+          <NextLink href="/poisson">日替わり 彩り寿司セレクション</NextLink>
+        </p>
+      </div>
+
       {/* MainDish */}
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">
