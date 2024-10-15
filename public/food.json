@@ -44,8 +44,8 @@
   "drinks": {
     "path": "drinks",
     "name": "Nojiri origin コーヒー",
-    "subName": "～マスターが厳選したコーヒー豆を使用～",
+    "subName": "～店主が厳選したコーヒー豆を使用～",
     "genre": "Drinks",
-    "description": "マスターが厳選したコーヒー豆を使用したコーヒーです。"
+    "description": "店主が厳選したコーヒー豆を使用したコーヒーです。"
   }
 }
