@@ -1,10 +1,9 @@
 'use client';
-import React, { cache } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { Klee_One } from 'next/font/google';
 import config from '../../next.config.mjs';
-import { useSearchParams } from 'next/navigation';
 
 const BASE_PATH = config.basePath ? config.basePath : '';
 
@@ -20,28 +19,38 @@ export type FoodJSON = {
   };
 };
 
-// キャッシュする様に修正
-const getData = cache(async (): Promise<FoodJSON> => {
-  const data = await fetch('/food.json', {
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json'
-    }
-  }).then(function (response) {
-    return response.json() as Promise<FoodJSON>;
-  });
-  return data;
-});
-
 // foodを引数にとる
-export const FoodCard: React.FC = async () => {
+export const FoodCard: React.FC<{ path: string }> = ({ path }) => {
+  // キャッシュする様に修正
+  const getData = async (): Promise<FoodJSON> => {
+    const data = await fetch('/food.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
+    }).then(function (response) {
+      return response.json() as Promise<FoodJSON>;
+    });
+    return data;
+  };
+
+  const [food, setFood] = useState<FoodJSON[string]>({
+    path: '',
+    name: '',
+    subName: '',
+    genre: '',
+    description: ''
+  });
+
+  useEffect(() => {
+    getData().then((data) => {
+      setFood(data[path]);
+    });
+  }, [path]);
+
   // URLを取得
   // 頭のスラッシュを削除
-  const searchParams = useSearchParams();
-  const foodPath = searchParams.get('genre') || '';
-  // getDataはキャッシュする様に修正
-  const json = await getData();
-  const food: FoodJSON[string] = json[foodPath];
+
   return (
     <div className={`rounded-sm max-w-lg mx-auto ${kleeOne.className}`}>
       {/* 戻るボタン */}
