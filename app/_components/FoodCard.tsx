@@ -23,7 +23,7 @@ export type FoodJSON = {
 export const FoodCard: React.FC<{ path: string }> = ({ path }) => {
   // キャッシュする様に修正
   const getData = async (): Promise<FoodJSON> => {
-    const data = await fetch('/food.json', {
+    const data = await fetch(`${BASE_PATH}/food.json`, {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json'
