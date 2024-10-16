@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { Klee_One } from 'next/font/google';
-import { FoodJSON } from '../[food]/page';
+import { FoodJSON } from '../food/page';
 import config from '../../next.config.mjs';
 
 const BASE_PATH = config.basePath ? config.basePath : '';
