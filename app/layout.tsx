@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from 'next/font/google';
 import Image from 'next/image';
 import config from '../next.config.mjs';
 import './globals.css';
+import { Suspense } from 'react';
 
 const noto = Noto_Sans_JP({ subsets: ['cyrillic'] });
 const BASE_PATH = config.basePath ? config.basePath : '';
@@ -26,7 +27,7 @@ export default function RootLayout({
           >
             <div className=" border-main transform rotate-3 bg-main bg-height">
               <div className="p-6 border border-main transform -rotate-3 relative bg-main bg-height">
-                {children}
+                <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
               </div>
             </div>
           </div>
