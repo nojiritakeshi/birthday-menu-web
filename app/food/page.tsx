@@ -1,5 +1,5 @@
 'use client';
-import { usePathname } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { cache } from 'react';
 import { FoodCard } from '../_components/FoodCard';
 
@@ -28,9 +28,10 @@ const getData = async (): Promise<FoodJSON> => {
 export default cache(async function Page() {
   // URLを取得
   // 頭のスラッシュを削除
-  const foodPath = usePathname();
+  const searchParams = useSearchParams();
+  const foodPath = searchParams.get('genre') || '';
   const json = await getData();
-  const food: FoodJSON[string] = json[foodPath.replace('/', '')];
+  const food: FoodJSON[string] = json[foodPath];
   console.log(food);
   return <FoodCard {...food} />;
 });

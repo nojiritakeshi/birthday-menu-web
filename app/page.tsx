@@ -14,10 +14,14 @@ export default function Home() {
           Appetizer
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/carpaccio">サーモンのカルパッチョ</NextLink>
+          <NextLink href="/food?genre=carpaccio">
+            サーモンのカルパッチョ
+          </NextLink>
         </p>
         <p className="text-center text-sm mt-5">
-          <NextLink href="/harumaki">海老と彩り野菜のフレッシュロール</NextLink>
+          <NextLink href="/food?genre=harumaki">
+            海老と彩り野菜のフレッシュロール
+          </NextLink>
         </p>
       </div>
 
@@ -25,7 +29,9 @@ export default function Home() {
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">Soup</h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/soup">玉ねぎとベーコンのコンソメスープ</NextLink>
+          <NextLink href="/food?genre=soup">
+            玉ねぎとベーコンのコンソメスープ
+          </NextLink>
         </p>
       </div>
 
@@ -35,7 +41,9 @@ export default function Home() {
           poisson
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/poisson">日替わり 彩り寿司セレクション</NextLink>
+          <NextLink href="/food?genre=poisson">
+            日替わり 彩り寿司セレクション
+          </NextLink>
         </p>
       </div>
 
@@ -45,7 +53,9 @@ export default function Home() {
           MainDish
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/mainDish">ポークソテークリームソース添え</NextLink>
+          <NextLink href="/food?genre=mainDish">
+            ポークソテークリームソース添え
+          </NextLink>
         </p>
       </div>
 
@@ -55,7 +65,7 @@ export default function Home() {
           Desserts
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/desserts">特製ティラミス</NextLink>
+          <NextLink href="/food?genre=desserts">特製ティラミス</NextLink>
         </p>
       </div>
 
@@ -63,7 +73,7 @@ export default function Home() {
       <div className="mb-6">
         <h2 className="text-center text-lg font-serif font-semibold">Drinks</h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/drinks">Nojiri origin コーヒー</NextLink>
+          <NextLink href="/food?genre=drinks">Nojiri origin コーヒー</NextLink>
         </p>
       </div>
     </div>
