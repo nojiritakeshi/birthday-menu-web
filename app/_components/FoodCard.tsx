@@ -20,7 +20,8 @@ export type FoodJSON = {
   };
 };
 
-const getData = async (): Promise<FoodJSON> => {
+// キャッシュする様に修正
+const getData = cache(async (): Promise<FoodJSON> => {
   const data = await fetch('/food.json', {
     headers: {
       'Content-Type': 'application/json',
@@ -30,14 +31,15 @@ const getData = async (): Promise<FoodJSON> => {
     return response.json() as Promise<FoodJSON>;
   });
   return data;
-};
+});
 
 // foodを引数にとる
-export const FoodCard: React.FC = cache(async () => {
+export const FoodCard: React.FC = async () => {
   // URLを取得
   // 頭のスラッシュを削除
   const searchParams = useSearchParams();
   const foodPath = searchParams.get('genre') || '';
+  // getDataはキャッシュする様に修正
   const json = await getData();
   const food: FoodJSON[string] = json[foodPath];
   return (
@@ -70,4 +72,4 @@ export const FoodCard: React.FC = cache(async () => {
       <p className="text-sm mt-4">{food.description}</p>
     </div>
   );
-});
+};
