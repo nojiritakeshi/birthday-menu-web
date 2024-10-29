@@ -29,10 +29,10 @@
   },
   "mainDish": {
     "path": "mainDish",
-    "name": "ポークソテークリームソース添え",
-    "subName": "～ポークソテーとクリームソースを添えた～",
+    "name": "高級和牛のステーキ",
+    "subName": "～じっくり焼いたステーキに特製ソースと併せて～",
     "genre": "MainDish",
-    "description": "ポークソテーとクリームソースを添えたメインディッシュです。"
+    "description": "高級和牛をしっかりと焼きました。お好みに合わせて焼き方を変えることもできます。"
   },
   "desserts": {
     "path": "desserts",
