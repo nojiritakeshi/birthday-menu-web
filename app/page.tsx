@@ -53,9 +53,7 @@ export default function Home() {
           MainDish
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/food?genre=mainDish">
-            ポークソテークリームソース添え
-          </NextLink>
+          <NextLink href="/food?genre=mainDish">高級和牛のステーキ</NextLink>
         </p>
       </div>
 
