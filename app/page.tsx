@@ -63,7 +63,7 @@ export default function Home() {
           Desserts
         </h2>
         <p className="text-center text-sm mt-2">
-          <NextLink href="/food?genre=desserts">特製ティラミス</NextLink>
+          <NextLink href="/food?genre=desserts">バースデーケーキ</NextLink>
         </p>
       </div>
 

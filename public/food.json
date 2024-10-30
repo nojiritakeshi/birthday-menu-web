@@ -36,10 +36,10 @@
   },
   "desserts": {
     "path": "desserts",
-    "name": "特製ティラミス",
-    "subName": "～チョコレートとカステラのティラミス～",
+    "name": "バースデーケーキ",
+    "subName": "～特別な思いを込めて～",
     "genre": "Desserts",
-    "description": "チョコレートとカステラをバランスよく使用したティラミスです。"
+    "description": "店主が自ら目利きしたケーキを提供します。チーズケーキ・ショートケーキ・チョコケーキからお選びいただけます。"
   },
   "drinks": {
     "path": "drinks",
